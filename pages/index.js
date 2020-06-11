@@ -1,8 +1,21 @@
 import Head from 'next/head'
+import style9 from 'style9';
+
+const styles = style9.create({
+  container: {
+    minHeight: '100vh',
+    paddingLeft: '.5rem',
+    paddingRight: '.5rem',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+});
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles('container')}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -60,15 +73,6 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
         main {
           padding: 5rem 0;
           flex: 1;
