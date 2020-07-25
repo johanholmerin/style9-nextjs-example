@@ -11,7 +11,7 @@
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "style9": "git+https://github.com/johanholmerin/style9#semver:^0.4.0"
+    "style9": "^0.5.2"
   },
   "devDependencies": {
     "next-transpile-modules": "^3.3.0"
